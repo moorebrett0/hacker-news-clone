@@ -12,10 +12,10 @@ haxorNews.config(function($stateProvider) {
         controller:'StoriesCtrl'
     });
 
-    $stateProvider.state("story", {
+    $stateProvider.state("stories.comments", {
         url:"/:storyId",
-        templateUrl: "partials/story.html",
-        // controller:
+        templateUrl: "partials/stories.comments.html",
+        controller: 'CommentsCtrl'
 
     });
 });
