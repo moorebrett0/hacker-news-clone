@@ -7,7 +7,8 @@
     <h3>Top stories:</h3>
     <ul>
         <li ng-repeat="item in stories">
-            <a ui-sref="stories">{{ item.title }}</a>
+            <a href="{{ storyLink }}">{{ item.title }}</a>
+            <a ui-sref="stories({ storyId: item.id })"><button class="btn btn-info btn-xs">Comments</button></a>
         </li>
     </ul>
 </div>
@@ -18,6 +19,7 @@
     <form ng-submit="addStory()" class="form-inline" role="form">
         <div class="form-group">
             <input type="text" ng-model="storyTitle" class="form-control" placeholder="Enter a title">
+            <input type="url" ng-model="storyLink" class="form-control" placeholder="Enter a Link">
         </div>
         <button name="submit" class="btn btn-default">Submit</button>
     </form>

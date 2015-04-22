@@ -11,4 +11,11 @@ haxorNews.config(function($stateProvider) {
         templateUrl: "partials/news-main.html",
         controller:'StoriesCtrl'
     });
+
+    $stateProvider.state("story", {
+        url:"/:storyId",
+        templateUrl: "partials/story.html",
+        // controller:
+
+    });
 });
