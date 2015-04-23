@@ -1,7 +1,7 @@
 Hacker news clone JS for Epicodus
 by Brett Moore and Bryan Borgeson
 
-Date: April 21, 2015
+Date: April 23, 2015
 
 Description
 
