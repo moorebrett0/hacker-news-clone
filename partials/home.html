@@ -1,3 +1,9 @@
 <h1>Welcome to haX0r News</h1>
-
-<h4>"<a ui-sref="stories">Login</a>" here</h4>
+<form name="loginForm"
+      ng-submit="login(credentials)" novalidate>
+  <label for="username">Username:</label>
+  <input type="text">
+  <label for="password">Password:</label>
+  <input type="password">
+</form>
+<a ui-sref="stories" class="btn btn-default">Login</a>
