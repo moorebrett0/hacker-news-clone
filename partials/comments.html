@@ -1,13 +1,13 @@
-<div ng-show="stories.comments.length">
+<!-- <div ng-show="comments.length"> -->
     <h2>Comments for {{ story.title }}</h2>
     <ul>
-        <li ng-repeat="item in stories.comments">
-            {{ item.comment }}
+        <li ng-repeat="item in story.comments">
+            {{ item.text }}
         </li>
     </ul>
-</div>
+<!-- </div> -->
 
-<div>
+
     <h2>Add a comment to {{ story.title }}</h2>
     <form ng-submit="addComment()" class="form-inline" role="form">
         <div class="form-group">
@@ -15,4 +15,3 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>
-</div>
