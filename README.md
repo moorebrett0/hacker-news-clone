@@ -1,16 +1,14 @@
-Hacker news clone JS for Epicodus
-by Brett Moore and Bryan Borgeson
+#Hacker news clone JS for Epicodus
+##by Brett Moore and Bryan Borgeson
 
-Date: April 23, 2015
+###Date: April 23, 2015
 
-Description
-
+###Description
 Simple hacker-news clone app that lets a user add, and comment on links that are shared.  You can also upvote the link. This app is practice with AngularUI Router.
 
-Setup instructions
-
-Clone this git repository
-Load index.html in your browser.
+###Setup instructions
+1. Clone this git repository
+2. Load index.html in your browser.
 
 Copyright © 2015, Brett Moore and Bryan Borgeson
 
