@@ -6,16 +6,15 @@ haxorNews.config(function($stateProvider) {
         templateUrl: "partials/home.html"
     });
 
-    $stateProvider.state("news-main", {
+    $stateProvider.state("stories", {
         url: "/news-main",
         templateUrl: "partials/news-main.html",
         controller:'StoriesCtrl'
     });
 
-    $stateProvider.state("stories.comments", {
-        url:"/:storyId",
-        templateUrl: "partials/stories.comments.html",
+    $stateProvider.state("comments", {
+        url: "stories/:storyId",
+        templateUrl: "partials/comments.html",
         controller: 'CommentsCtrl'
-
     });
 });

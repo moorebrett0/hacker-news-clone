@@ -8,7 +8,7 @@
     <ul>
         <li ng-repeat="item in stories">
             <a href="{{ item.link }}">{{ item.title }}</a>
-            <a ui-sref="stories.comments({ storyId: item.id })">Comments</a>
+            <a ui-sref="comments({ storyId: item.id })" class="btn btn-info btn-xs">Comments</a>  <!-- This was a nested state link, but we didn't have a stories state -->
         </li>
     </ul>
 </div>
@@ -19,7 +19,7 @@
     <form ng-submit="addStory()" class="form-inline" role="form">
         <div class="form-group">
             <input type="text" ng-model="storyTitle" class="form-control" placeholder="Enter a title">
-            <input type="url" ng-model="storyLink" class="form-control" placeholder="Enter a Link">
+            <input type="text" ng-model="storyLink" class="form-control" placeholder="Enter a Link">
         </div>
         <button name="submit" class="btn btn-default">Submit</button>
     </form>

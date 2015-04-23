@@ -1,5 +1,5 @@
 haxorNews.controller('CommentsCtrl', function CommentsCtrl($scope, $stateParams, StoriesFactory, UtilitiesFactory){
-    $scope.story = UtilitiesFactory.findById(StoriesFactory.stories, $stateParams.storyId)
+    $scope.story = UtilitiesFactory.findById(StoriesFactory.stories, $stateParams.storyId);  // Does this need a semi colon?
 
 
     $scope.addComment = function() {
