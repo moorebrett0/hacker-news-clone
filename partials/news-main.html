@@ -7,7 +7,7 @@
     <h3>Top stories:</h3>
     <ul>
         <li ng-repeat="item in stories">
-            <a href="{{ storyLink }}">{{ item.title }}</a>
+            <a href="{{ item.link }}">{{ item.title }}</a>
             <a ui-sref="stories.comments({ storyId: item.id })">Comments</a>
         </li>
     </ul>
