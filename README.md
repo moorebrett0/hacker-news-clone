@@ -1,4 +1,4 @@
-Course Roster JS for Epicodus
+Hacker news clone JS for Epicodus
 by Brett Moore and Bryan Borgeson
 
 Date: April 21, 2015
